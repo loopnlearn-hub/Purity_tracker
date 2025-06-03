@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purity Mission Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Purity Mission Tracker</h1>
+  </header>
+
+  <main>
+    <section id="start-date">
+      <label for="startInput">Set Your Mission Start Date</label><br>
+      <input type="date" id="startInput" aria-label="Mission Start Date" />
+      <button id="setStartBtn" aria-label="Set Mission Start Date">Set Start Date</button>
+    </section>
+
+    <section id="day-counter" aria-live="polite">
+      <label for="dayCount">Days Purified So Far</label>
+      <div class="count" id="dayCount" aria-atomic="true">0</div>
+    </section>
+
+    <section id="actions">
+      <button id="checkin-btn" aria-label="Daily Check-in">Daily Check-in ✅</button>
+      <button id="reset-btn" aria-label="Reset Mission">Reset Mission 🔄</button>
+    </section>
+
+    <section id="quote" aria-live="polite" aria-atomic="true"></section>
+
+    <section id="progress-log" aria-label="Daily Progress Log">
+      <label>Your Daily Progress</label>
+      <div id="progress-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
