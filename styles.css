@@ -27,6 +27,14 @@ section {
 }
 
 input[type="date"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important; /* For iOS Safari */
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 5px;
+  font-family: inherit;
+}
   padding: 8px;
   margin-top: 5px;
   margin-right: 10px;
